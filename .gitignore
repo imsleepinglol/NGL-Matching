@@ -20,3 +20,6 @@ npm-debug.log*
 .idea/
 .DS_Store
 Thumbs.db
+
+# Local installer files
+Git-2.56.1-64-bit.exe
