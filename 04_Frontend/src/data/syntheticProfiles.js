@@ -1,0 +1,276 @@
+
+const pref = (
+  category,
+  topic,
+  value,
+  importance = "medium",
+  preferenceType = "personal_interest",
+  state = "preferred"
+) => ({
+  category,
+  topic,
+  value,
+  importance,
+  preferenceType,
+  state,
+});
+
+const profile = (
+  id,
+  name,
+  age,
+  location,
+  bio,
+  preferences
+) => ({
+  id,
+  name,
+  age,
+  location,
+  bio,
+  preferences,
+});
+
+export const syntheticProfiles = [
+  profile("profile-001", "Profile 1", 26, "Birmingham",
+    "Adventurous, outgoing and always interested in discovering new places.",
+    [
+      pref("interests", "travelling", "Adventure travel", "high"),
+      pref("interests", "food", "Trying new cuisines", "high"),
+      pref("interests", "music", "Pop music"),
+      pref("personality", "personality", "Adventurous", "high"),
+      pref("lifestyle", "social lifestyle", "Social and outgoing"),
+      pref("values", "family", "Family-oriented", "high"),
+      pref("interests", "travelling", "Enjoys travelling", "high", "partner_expectation"),
+    ]),
+
+  profile("profile-002", "Profile 2", 24, "London",
+    "Creative, thoughtful and passionate about music and meaningful conversations.",
+    [
+      pref("interests", "music", "Indie music", "high"),
+      pref("interests", "movies", "Romantic films"),
+      pref("interests", "food", "Coffee shops"),
+      pref("personality", "personality", "Introverted"),
+      pref("lifestyle", "social lifestyle", "Quiet lifestyle", "high"),
+      pref("values", "honesty", "Honesty", "high"),
+      pref("personality", "personality", "Kind and understanding", "high", "partner_expectation"),
+    ]),
+
+  profile("profile-003", "Profile 3", 27, "Manchester",
+    "Fitness enthusiast who enjoys sports, challenges and a healthy routine.",
+    [
+      pref("interests", "fitness", "Gym and workouts", "high"),
+      pref("interests", "interests", "Football"),
+      pref("interests", "movies", "Action films"),
+      pref("lifestyle", "lifestyle", "Healthy lifestyle", "high"),
+      pref("personality", "personality", "Ambitious", "high"),
+      pref("values", "loyalty", "Loyalty", "high"),
+      pref("interests", "fitness", "Enjoys fitness", "medium", "partner_expectation"),
+    ]),
+
+  profile("profile-004", "Profile 4", 25, "Leeds",
+    "Independent and curious, with a love for photography and cultural experiences.",
+    [
+      pref("interests", "travelling", "Cultural travel", "high"),
+      pref("interests", "interests", "Photography"),
+      pref("interests", "food", "International cuisine", "high"),
+      pref("personality", "personality", "Independent", "high"),
+      pref("lifestyle", "lifestyle", "Balanced lifestyle"),
+      pref("values", "honesty", "Honesty", "high"),
+      pref("interests", "travelling", "Enjoys exploring cultures", "high", "partner_expectation"),
+    ]),
+
+  profile("profile-005", "Profile 5", 28, "Bristol",
+    "Friendly and sociable, enjoys live music, restaurants and meeting new people.",
+    [
+      pref("interests", "music", "Live music and concerts", "high"),
+      pref("interests", "food", "Restaurants and dining", "high"),
+      pref("lifestyle", "social lifestyle", "Social and outgoing", "high"),
+      pref("personality", "personality", "Extroverted", "high"),
+      pref("interests", "travelling", "Weekend trips"),
+      pref("values", "loyalty", "Loyalty", "high"),
+      pref("lifestyle", "social lifestyle", "Enjoys social activities", "medium", "partner_expectation"),
+    ]),
+
+  profile("profile-006", "Profile 6", 23, "Nottingham",
+    "Thoughtful and calm, enjoys reading, cooking and spending time with family.",
+    [
+      pref("interests", "food", "Cooking at home", "high"),
+      pref("interests", "movies", "Drama films"),
+      pref("interests", "interests", "Reading"),
+      pref("personality", "personality", "Introverted", "high"),
+      pref("values", "family", "Family-oriented", "high"),
+      pref("lifestyle", "lifestyle", "Relaxed lifestyle", "high"),
+      pref("values", "family", "Values family", "high", "partner_expectation"),
+    ]),
+
+  profile("profile-007", "Profile 7", 29, "Sheffield",
+    "Ambitious and energetic, interested in technology, sports and personal growth.",
+    [
+      pref("interests", "fitness", "Sports and fitness", "high"),
+      pref("interests", "travelling", "Adventure travel", "high"),
+      pref("interests", "interests", "Technology"),
+      pref("personality", "personality", "Ambitious", "high"),
+      pref("lifestyle", "lifestyle", "Active lifestyle", "high"),
+      pref("values", "honesty", "Honesty", "high"),
+      pref("personality", "personality", "Ambitious and motivated", "medium", "partner_expectation"),
+    ]),
+
+  profile("profile-008", "Profile 8", 26, "Coventry",
+    "Open-minded and cheerful, enjoys spontaneous experiences and entertainment.",
+    [
+      pref("interests", "movies", "Comedy films"),
+      pref("interests", "music", "Pop music", "high"),
+      pref("interests", "travelling", "Spontaneous trips", "high"),
+      pref("personality", "personality", "Open-minded", "high"),
+      pref("lifestyle", "social lifestyle", "Social and outgoing"),
+      pref("values", "loyalty", "Loyalty", "high"),
+      pref("interests", "music", "Enjoys music", "medium", "partner_expectation"),
+    ]),
+
+  profile("profile-009", "Profile 9", 25, "Leicester",
+    "A relaxed person who loves art, museums and discovering local culture.",
+    [
+      pref("interests", "interests", "Art and museums", "high"),
+      pref("interests", "travelling", "Cultural travel"),
+      pref("interests", "music", "Classical music"),
+      pref("personality", "personality", "Thoughtful"),
+      pref("lifestyle", "lifestyle", "Relaxed lifestyle", "high"),
+      pref("values", "honesty", "Honesty", "high"),
+      pref("interests", "interests", "Appreciates creativity", "medium", "partner_expectation"),
+    ]),
+
+  profile("profile-010", "Profile 10", 27, "Wolverhampton",
+    "Energetic and competitive, enjoys football, outdoor activities and fitness.",
+    [
+      pref("interests", "fitness", "Football and sports", "high"),
+      pref("interests", "fitness", "Outdoor activities"),
+      pref("interests", "movies", "Action films"),
+      pref("personality", "personality", "Competitive"),
+      pref("lifestyle", "lifestyle", "Active lifestyle", "high"),
+      pref("values", "loyalty", "Loyalty", "high"),
+      pref("interests", "fitness", "Enjoys sports", "high", "partner_expectation"),
+    ]),
+
+  profile("profile-011", "Profile 11", 24, "Oxford",
+    "Book lover who enjoys thoughtful conversations, nature and peaceful weekends.",
+    [
+      pref("interests", "interests", "Reading"),
+      pref("interests", "interests", "Nature walks"),
+      pref("interests", "music", "Acoustic music"),
+      pref("personality", "personality", "Introverted", "high"),
+      pref("lifestyle", "lifestyle", "Quiet lifestyle", "high"),
+      pref("values", "honesty", "Honesty", "high"),
+      pref("personality", "personality", "Emotionally understanding", "high", "partner_expectation"),
+    ]),
+
+  profile("profile-012", "Profile 12", 28, "Cambridge",
+    "Curious and intellectually driven, enjoys technology and exploring new ideas.",
+    [
+      pref("interests", "interests", "Technology", "high"),
+      pref("interests", "interests", "Science and learning"),
+      pref("interests", "movies", "Documentary films"),
+      pref("personality", "personality", "Curious", "high"),
+      pref("lifestyle", "lifestyle", "Independent lifestyle"),
+      pref("values", "honesty", "Honesty", "high"),
+      pref("personality", "personality", "Intellectually curious", "high", "partner_expectation"),
+    ]),
+
+  profile("profile-013", "Profile 13", 26, "Liverpool",
+    "A lively personality who loves dancing, concerts and exploring nightlife.",
+    [
+      pref("interests", "music", "Pop and dance music", "high"),
+      pref("interests", "interests", "Dancing"),
+      pref("interests", "travelling", "City breaks"),
+      pref("personality", "personality", "Extroverted", "high"),
+      pref("lifestyle", "social lifestyle", "Nightlife and parties", "high"),
+      pref("values", "loyalty", "Loyalty"),
+      pref("lifestyle", "social lifestyle", "Enjoys nightlife", "high", "partner_expectation"),
+    ]),
+
+  profile("profile-014", "Profile 14", 23, "Solihull",
+    "Creative home cook who enjoys cosy evenings and close relationships.",
+    [
+      pref("interests", "food", "Cooking and baking", "high"),
+      pref("interests", "movies", "Romantic films"),
+      pref("interests", "music", "R&B music"),
+      pref("personality", "personality", "Caring"),
+      pref("lifestyle", "lifestyle", "Home-oriented lifestyle", "high"),
+      pref("values", "family", "Family-oriented", "high"),
+      pref("values", "family", "Values close relationships", "high", "partner_expectation"),
+    ]),
+
+  profile("profile-015", "Profile 15", 29, "Edinburgh",
+    "A travel enthusiast who enjoys hiking, photography and outdoor adventures.",
+    [
+      pref("interests", "travelling", "Adventure travel", "high"),
+      pref("interests", "fitness", "Hiking"),
+      pref("interests", "interests", "Photography"),
+      pref("personality", "personality", "Adventurous", "high"),
+      pref("lifestyle", "lifestyle", "Outdoor lifestyle", "high"),
+      pref("values", "honesty", "Honesty"),
+      pref("interests", "travelling", "Enjoys outdoor adventures", "high", "partner_expectation"),
+    ]),
+
+  profile("profile-016", "Profile 16", 25, "Glasgow",
+    "A passionate music fan who enjoys films, creative hobbies and social events.",
+    [
+      pref("interests", "music", "Rock music", "high"),
+      pref("interests", "movies", "Thriller films"),
+      pref("interests", "interests", "Creative hobbies"),
+      pref("personality", "personality", "Expressive"),
+      pref("lifestyle", "social lifestyle", "Social lifestyle"),
+      pref("values", "loyalty", "Loyalty", "high"),
+      pref("interests", "music", "Enjoys live music", "high", "partner_expectation"),
+    ]),
+
+  profile("profile-017", "Profile 17", 27, "Southampton",
+    "A balanced individual interested in fitness, cooking and personal development.",
+    [
+      pref("interests", "fitness", "Gym and workouts", "high"),
+      pref("interests", "food", "Healthy cooking", "high"),
+      pref("interests", "travelling", "Weekend trips"),
+      pref("personality", "personality", "Ambitious"),
+      pref("lifestyle", "lifestyle", "Balanced lifestyle", "high"),
+      pref("values", "honesty", "Honesty", "high"),
+      pref("lifestyle", "lifestyle", "Values a healthy lifestyle", "medium", "partner_expectation"),
+    ]),
+
+  profile("profile-018", "Profile 18", 24, "York",
+    "A warm and artistic individual who enjoys culture, food and meaningful connections.",
+    [
+      pref("interests", "interests", "Painting and art", "high"),
+      pref("interests", "food", "Trying international food"),
+      pref("interests", "music", "Jazz music"),
+      pref("personality", "personality", "Creative", "high"),
+      pref("lifestyle", "lifestyle", "Relaxed lifestyle"),
+      pref("values", "family", "Family-oriented"),
+      pref("personality", "personality", "Creative and open-minded", "medium", "partner_expectation"),
+    ]),
+
+  profile("profile-019", "Profile 19", 28, "Cardiff",
+    "A sociable and adventurous person who enjoys road trips and trying new activities.",
+    [
+      pref("interests", "travelling", "Road trips", "high"),
+      pref("interests", "fitness", "Outdoor sports"),
+      pref("interests", "food", "Street food"),
+      pref("personality", "personality", "Adventurous", "high"),
+      pref("lifestyle", "social lifestyle", "Social and outgoing"),
+      pref("values", "loyalty", "Loyalty", "high"),
+      pref("interests", "travelling", "Enjoys spontaneous adventures", "high", "partner_expectation"),
+    ]),
+
+  profile("profile-020", "Profile 20", 26, "Newcastle",
+    "A calm and dependable person who enjoys films, family time and meaningful relationships.",
+    [
+      pref("interests", "movies", "Drama and comedy films", "high"),
+      pref("interests", "music", "Soul music"),
+      pref("interests", "food", "Home cooking"),
+      pref("personality", "personality", "Calm and patient", "high"),
+      pref("lifestyle", "lifestyle", "Relaxed lifestyle"),
+      pref("values", "family", "Family-oriented", "high"),
+      pref("values", "loyalty", "Values loyalty", "high", "partner_expectation"),
+    ]),
+];
+
+export default syntheticProfiles;
