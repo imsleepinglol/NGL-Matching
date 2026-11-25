@@ -255,18 +255,13 @@ AI tools were also used during development to assist with coding, debugging, imp
 
 The following research informed the project's problem definition and design rationale:
 
-1. Eastwick, P.W. and Finkel, E.J. (2008). 'Sex Differences in Mate Preferences Revisited: Do People Know What They Initially Desire in a Romantic Partner?' *Journal of Personality and Social Psychology*, 94(2), pp. 245–264. https://doi.org/10.1037/0022-3514.94.2.245
-
-2. Joel, S., Eastwick, P.W. and Finkel, E.J. (2017). 'Is Romantic Desire Predictable? Machine Learning Applied to Initial Romantic Attraction'. *Psychological Science*, 28(10), pp. 1478–1489. https://doi.org/10.1177/0956797617714580
-
-3. Whyte, S. and Torgler, B. (2017). 'Preference Versus Choice in Online Dating'. *Cyberpsychology, Behavior, and Social Networking*, 20(3), pp. 150–156. https://doi.org/10.1089/cyber.2016.0528
-
-4. Chen, K.-M., Hsieh, Y.-W. and Lin, M.-J. (2023). 'Reducing Recommendation Inequality via Two-Sided Matching: A Field Experiment of Online Dating'. *International Economic Review*, 64(3), pp. 1201–1221. https://doi.org/10.1111/iere.12631
-
-5. Cramer, H. et al. (2008). 'The Effects of Transparency on Trust in and Acceptance of a Content-Based Art Recommender'. *User Modeling and User-Adapted Interaction*, 18, pp. 455–496. https://doi.org/10.1007/s11257-008-9051-3
-
-6. Tintarev, N. and Masthoff, J. (2007). 'A Survey of Explanations in Recommender Systems'. In *2007 IEEE 23rd International Conference on Data Engineering Workshop*, pp. 801–810. https://doi.org/10.1109/ICDEW.2007.4401070
-
-7. Sinha, R.R. and Swearingen, K. (2002). 'The Role of Transparency in Recommender Systems'. *CHI Extended Abstracts*, pp. 830–831. https://doi.org/10.1145/506443.506619
+•	Amershi, S. et al. (2019) ‘Guidelines for Human-AI Interaction’, Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems. https://doi.org/10.1145/3290605.3300233
+•	Chen, K.-M., Hsieh, Y.-W. and Lin, M.-J. (2023) ‘Reducing Recommendation Inequality via Two-Sided Matching: A Field Experiment of Online Dating’, International Economic Review, 64(3), pp. 1201–1221. https://doi.org/10.1111/iere.12631
+•	Cramer, H. et al. (2008) ‘The Effects of Transparency on Trust in and Acceptance of a Content-Based Art Recommender’, User Modeling and User-Adapted Interaction, 18, pp. 455–496. https://doi.org/10.1007/s11257-008-9051-3
+•	Eastwick, P.W. and Finkel, E.J. (2008) ‘Sex Differences in Mate Preferences Revisited: Do People Know What They Initially Desire in a Romantic Partner?’, Journal of Personality and Social Psychology, 94(2), pp. 245–264. https://doi.org/10.1037/0022-3514.94.2.245
+•	Joel, S., Eastwick, P.W. and Finkel, E.J. (2017) ‘Is Romantic Desire Predictable? Machine Learning Applied to Initial Romantic Attraction’, Psychological Science, 28(10), pp. 1478–1489. https://doi.org/10.1177/0956797617714580
+•	Sinha, R.R. and Swearingen, K. (2002) ‘The Role of Transparency in Recommender Systems’, CHI Extended Abstracts, pp. 830–831. https://doi.org/10.1145/506443.506619
+•	Tintarev, N. and Masthoff, J. (2007) ‘A Survey of Explanations in Recommender Systems’, 2007 IEEE 23rd International Conference on Data Engineering Workshop, pp. 801–810. https://doi.org/10.1109/ICDEW.2007.4401070
+•	Whyte, S. and Torgler, B. (2017) ‘Preference Versus Choice in Online Dating’, Cyberpsychology, Behavior, and Social Networking, 20(3), pp. 150–156. https://doi.org/10.1089/cyber.2016.0528
 
 ---
